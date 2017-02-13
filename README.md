@@ -80,7 +80,7 @@ Detaljnije o postupku i rezultatima u [posebnom dokumentu](HaarDetector/HaarDete
 
 Histogram orijentisanih gradijenata predstavlja noviji pristup za izračunavanje karakteristike slike, na osnovu izračunavanja gradijenata intenziteta ili ivica objekata na slici. Za razliku od ostalih deskriptora, HOG je invarijantan na geometrijske i svetlosne transformacije, ali je zavisi od rotacije objekta i veličine deskriptorskih blokova. Na osnovu HOG karakteristika pozitivnih i negativnih slika obučava se SVM klasifikator koji nalazi optimalnu hiper-ravan kao funkciju odlučivanja. *Multiscale sliding window* pristup upotrebljen je za lokalizaciju objekta na slici.
 
-Kaskadni klasifikator zasnovan na Haar karakteristikama obučen je na osnovu slika znakova pruženih u **GTSDB** i **GTSRB** skupu, dok je za skup negativnih slika upotrebljavan skup proizvoljnih slika bez saobraćajnih znakova.
+Kaskadni klasifikator zasnovan na HOG karakteristikama obučen je na osnovu slika znakova pruženih u **GTSDB** i **GTSRB** skupu, dok je za skup negativnih slika upotrebljavan skup proizvoljnih slika bez saobraćajnih znakova.
 
 Detaljnije o postupku i rezultatima u [posebnom dokumentu](HOGSVM/HOGSVM.ipynb).
 
